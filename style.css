@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  /* background-color: #2d3436; */
+}
+.name{
+font-size: 40px;
+display: flex;
+width: 100vw;
+height: 10vh;
+/* align-items: center; */
+justify-content: center;
+font-family: monospace;
+letter-spacing: 2px;
+color: #a29bfe;
+position: absolute;
+top: 5px;
+animation: typer 10s infinite;
+overflow: hidden;
+white-space: nowrap;
+border-left: 0px solid #a29bfe;
+}
+
+@keyframes typer {
+0% {
+  width: 0%;
+}
+50% {
+  width: 100%
+}
+100%{
+  width: 250%;
+}
+}
+
+
+.container{
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  margin-top: 10vh;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.About  h1, .Education h1, .Projects h1, .Skills h1, .Hobbies h1{
+  font-size: 35px;
+  font-family: cursive;
+
+  width: 90vw;
+  padding: 10vh;
+  text-align: center;
+  margin:auto;
+  border-radius: 100px;
+}
+
+.About h1{
+  background-color: #fab1a0
+}
+
+.About p{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.About b{
+  color: blue;
+}
+
+.Education h2{
+  text-align: center;
+  padding-top: 10vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.Education h1{
+  background-color: #a29bfe;
+}
+
+.Projects h1{
+  background-color: #55efc4;
+}
+
+.Skills h1{
+  background-color: #74b9ff;
+}
+
+.Hobbies h1{
+  background-color: #ffeaa7;
+}

@@ -15,7 +15,7 @@
   font-family: monospace;
   letter-spacing: 8px;
   color: #a29bfe;
-  animation: typer 15s linear infinite;
+  /* animation: typer 15s linear infinite; */
   text-shadow: 3px 3px #636e72;
 }
 .name h1{
@@ -142,9 +142,11 @@ section {
   color: #fd79a8;
   text-shadow: 1.5px 1.5px #636e72;
 }
-
+.Projects{
+  height: 170vh;
+}
 .Projects h1{
-    background: linear-gradient(#55efc4, #00b894);
+  background: linear-gradient(#55efc4, #00b894);
 }
 
 .Projects p{

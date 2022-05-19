@@ -19,6 +19,7 @@ body{
 .IntroH1:hover, .ProjectsH1:hover, .ExperienceH1:hover, .SkillsH1:hover, .HobbiesH1:hover, .ContactH1:hover {
   text-shadow: 2px 2px #66E4E9;
   animation: none;
+  box-shadow: 0px 0px 25px 5px #66E4E9;
 }
 .IntroH1, .ProjectsH1, .ExperienceH1, .SkillsH1, .HobbiesH1, .ContactH1 {
   font-family: 'VT323', monospace;
@@ -50,12 +51,31 @@ body{
   top: 5%;
   width: 19%;
   height: 19%;
-  /* box-shadow: 30px 30px 30px 30px #636e72; */
+  box-shadow: 30px 30px 30px 15px #636e72;
   border-radius: 10%;
-  margin-top: -5%;
+  margin-top: -3%;
   transform: rotate(-8deg);
   border: 3px solid black;
-  z-index: -1;
+  /* z-index: -1; */
+}
+
+.MePic:hover{
+  float: center;
+  position: relative;
+  top: 5%;
+  width: 19%;
+  height: 19%;
+  box-shadow: 0px 0px 20px 2px #66E4E9;
+  border-radius: 10%;
+  margin-top: -3%;
+  transform: rotate(-8deg);
+  border: 3px solid black;
+
+
+  transform: rotate(0deg);
+  border: 3px solid white;
+  z-index: 100;
+  transform: scale(1.1);
 }
 
 
@@ -72,6 +92,14 @@ p{
    color: #E77FD6;
  }
 
+ b:hover{
+   color: #66E4E9;
+ }
+
+ a:hover{
+   color: #66E4E9;
+ }
+
  h2{
    font-family: 'VT323', monospace;
    font-size: 35px;
@@ -80,6 +108,10 @@ p{
    text-transform: uppercase;
    text-shadow: 2px 2px #11AAAD;
     -webkit-text-stroke: 0.5px #11AAAD;
+ }
+ h2:hover{
+   text-shadow: 2px 2px #F27D77;
+   transform: scale(1.2);
  }
 
 .Top{
@@ -147,6 +179,13 @@ p{
 .Proj1:hover, .Proj2:hover, .Proj3:hover, .Proj4:hover, .Proj5:hover, .Proj6:hover{
   box-shadow: 0px 0px 20px 2px #F27D77;
   transform: scale(1.2);
+
+}
+
+.Proj1:hover > h2, .Proj2:hover > h2, .Proj3:hover > h2, .Proj4:hover > h2, .Proj5:hover > h2, .Proj6:hover > h2{
+  text-shadow: 2px 2px #F27D77;
+  transform: scale(1.1);
+
 }
 
 .CNPara{
@@ -278,10 +317,10 @@ p{
   float: left;
   width: 19%;
   height: 19%;
-  /* box-shadow: 30px 30px 30px 30px #636e72; */
+  box-shadow: 30px 30px 30px 30px #636e72;
   border-radius: 10%;
   margin-top: 5vh;
-  transform: rotate(8deg);
+  transform: rotate(12deg);
   border: 3px solid black;
 }
 .columnTwo img{
@@ -291,7 +330,7 @@ p{
   box-shadow: 30px 30px 30px 30px #636e72;
   border-radius: 10%;
   margin-top: 5vh;
-  transform: rotate(-8deg);
+  transform: rotate(-12deg);
   border: 3px solid black;
 }
 a{
@@ -309,9 +348,10 @@ img:hover {
   box-shadow: 0px 0px 30px 30px #636e72;
   border-radius: 10%;
   margin-top: -5%;
-  transform: rotate(-8deg);
+  transform: rotate(0deg);
   border: 3px solid white;
   z-index: 100;
+  transform: scale(1.1);
 }
 
 @keyframes headers {
@@ -325,6 +365,8 @@ img:hover {
     opacity: 0%;
   }
 }
+
+
 
 /*
 font-family: 'Indie Flower', cursive;

@@ -117,6 +117,7 @@ body{
   transform: rotate(-8deg);
   border: 3px solid black;
   /* z-index: -1; */
+  margin-bottom: 15vh;
 }
 
 .MePic:hover{
@@ -131,11 +132,11 @@ body{
   transform: rotate(-8deg);
   border: 3px solid black;
 
-
   transform: rotate(0deg);
   border: 3px solid white;
   z-index: 100;
   transform: scale(1.1);
+
 }
 
 
@@ -182,7 +183,7 @@ p{
 .Top{
   /* height: 50%; */
   height: 60vh;
-  /* margin-top: 2.5%; */
+  margin-top: 15vh;
   /* margin-bottom: 1.5s%; */
 }
 
@@ -260,6 +261,9 @@ p{
   margin-top: 0;
   margin-bottom: 0;
 }
+.CodeNinjas{
+  margin-bottom: 20vh;
+}
 
 .PNC{
   margin-top: 7%;
@@ -335,8 +339,8 @@ p{
 
 .AIFoundations:hover, .SocialPsychology:hover, .PythonDataAnalysis:hover, .RiskManagementFrameworks:hover{
   box-shadow: 0px 0px 20px 2px #F27D77;
-
-  transform: skewX(2.5deg);
+  transform: scale(1.1);
+  /* transform: skewX(2.5deg); */
 }
 
 .AIFoundations:hover > h2, .SocialPsychology:hover > h2, .PythonDataAnalysis:hover > h2, .RiskManagementFrameworks:hover > h2{

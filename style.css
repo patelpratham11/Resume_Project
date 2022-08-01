@@ -7,21 +7,81 @@ body{
   justify-content: center;
   margin: 0;
   background-color: #3E4750;
+  max-height: 100%;
+}
+
+.Menu{
+  margin-left: 3%;
+  position: fixed;
+  /* width: 100%; */
+  float: left;
+  scroll-behavior: smooth;
+  /* transition: 3s; */
+  z-index: 50;
+}
+
+.Menu > h3{
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+  font-size: 25px;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px #3E4750;
+  /* #66E4E9; */
+  color: #E77FD6;
+  padding: 15px;
+  background: #C4C4C3;
+  border-radius: 50px;
 
 }
-.Intro, .Projects, .Experience, .Skills, .Hobbies, .Contact {
+
+.Menu:hover .Menu>h3{
+  transform: scale(1.1);
+  background: #3E4750;
+  border: 1px solid #C4C4C3;
+}
+.Menu:hover .Choices{
+  display: block;
+}
+
+/* .Menu:hover .Menu>h3{
+  display: none;
+} */
+
+.Choices{
+  display: none;
+  float: left;
+  text-align: left;
+  position: fixed;
+  transition: 3s;
+}
+.Choices > a{
+  font-family: 'Nova Mono', monospace;
+  text-decoration: none;
+  font-size: 15px;
+  margin: -5%;
+  border-radius: 50px;
+  background-color: #3E4750;
+  padding: 4%;
+
+}
+
+.Choices > a:hover{
+  border: 1px solid #C4C4C3;
+}
+
+.Intro, .Projects, .Experience, .Accomplishments ,.Skills, .Hobbies, .Contact {
   /* border: 2px solid white; */
   justify-content: center;
   margin-top: 5%;
 }
 
 
-.IntroH1:hover, .ProjectsH1:hover, .ExperienceH1:hover, .SkillsH1:hover, .HobbiesH1:hover, .ContactH1:hover {
+.IntroH1:hover, .ProjectsH1:hover, .ExperienceH1:hover, .AccomplishmentsH1:hover, .SkillsH1:hover, .HobbiesH1:hover, .ContactH1:hover {
   text-shadow: 2px 2px #66E4E9;
   animation: none;
   box-shadow: 0px 0px 25px 5px #66E4E9;
 }
-.IntroH1, .ProjectsH1, .ExperienceH1, .SkillsH1, .HobbiesH1, .ContactH1 {
+.IntroH1, .ProjectsH1, .ExperienceH1, .AccomplishmentsH1, .SkillsH1, .HobbiesH1, .ContactH1 {
   font-family: 'VT323', monospace;
   font-size: 55px;
   letter-spacing: 2.5vh;
@@ -111,19 +171,26 @@ p{
  }
  h2:hover{
    text-shadow: 2px 2px #F27D77;
-   transform: scale(1.2);
+   transform: scaleY(1.2);
+   letter-spacing: 4vh;
  }
 
+.Projects{
+  /* height: 900%; */
+}
+
 .Top{
-  height: 50vh;
-  margin-top: 2.5%;
-  margin-bottom: 5%;
+  /* height: 50%; */
+  height: 60vh;
+  /* margin-top: 2.5%; */
+  /* margin-bottom: 1.5s%; */
 }
 
 .Bottom{
-  height: 50vh;
-  margin-top: 2.5%;
-  margin-bottom: 5%;
+  /* height: 50%; */
+  height: 60vh;
+  /* margin-top: 1.5%; */
+  /* margin-bottom: 2.5%; */
 }
 
 
@@ -167,18 +234,19 @@ p{
 }
 
 .Proj1, .Proj2, .Proj3{
-  margin-top: 5%;
+  /* margin-top: 2.5%; */
   box-shadow: 0px 0px 20px 2px #66E4E9;
 }
 
 .Proj4, .Proj5, .Proj6{
-  margin-top: -1.8%;
+  /* margin-top: -5%; */
   box-shadow: 0px 0px 20px 2px #66E4E9;
 }
 
 .Proj1:hover, .Proj2:hover, .Proj3:hover, .Proj4:hover, .Proj5:hover, .Proj6:hover{
   box-shadow: 0px 0px 20px 2px #F27D77;
-  transform: scale(1.2);
+  transform: scale(1.1);
+
 
 }
 
@@ -188,20 +256,96 @@ p{
 
 }
 
-.CNPara{
+.CNPara, .RAPara, .PNCPara{
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.CodeNinjas{
+.PNC{
+  margin-top: 7%;
+}
+.CodeNinjas, .Mathys{
   margin-top: 10%;
 }
 
-.Mathys{
-  margin-top: 5%;
+
+
+/* .PNCHead{
+  float: right;
+} */
+.PNCPic{
+  height: 9%;
+  width: 9%;
+  float: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.PITTPic{
+  height: 6%;
+  width: 6%;
+  float: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.CNPic{
+  height: 10%;
+  width: 10%;
+  float: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*  */
+.AccOne{
+  height: 150vh;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
 }
 
 
+.AIFoundations, .SocialPsychology, .RiskManagementFrameworks, .PythonDataAnalysis{
+  border: 2px solid white;
+  float:left;
+  width:44.5%;
+  /* height:280px; */
+  /* margin-left: auto;
+  margin-right: 2.5%; */
+  /* margin-right: 5%; */
+  /* justify-content: */
+}
+
+.AIFoundations, .RiskManagementFrameworks{
+  border-radius: 30px;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-right: 5%;
+}
+
+.SocialPsychology, .PythonDataAnalysis{
+  border-radius: 30px;
+  text-align: center;
+  margin-right: 2.5%;
+  /* margin-right: 5%; */
+}
+
+.AIFoundations, .SocialPsychology, .PythonDataAnalysis, .RiskManagementFrameworks{
+  margin-top: 5%;
+  box-shadow: 0px 0px 20px 2px #66E4E9;
+}
+
+.AIFoundations:hover, .SocialPsychology:hover, .PythonDataAnalysis:hover, .RiskManagementFrameworks:hover{
+  box-shadow: 0px 0px 20px 2px #F27D77;
+
+  transform: skewX(2.5deg);
+}
+
+.AIFoundations:hover > h2, .SocialPsychology:hover > h2, .PythonDataAnalysis:hover > h2, .RiskManagementFrameworks:hover > h2{
+  text-shadow: 2px 2px #F27D77;
+  transform: scale(1.1);
+}
+
+
+/*  */
 .all{
   margin-top: 2%;
   text-align: center;
@@ -246,10 +390,10 @@ p{
   max-width: 55%;
 }
 .CommunicationBar{
-  max-width: 90%;
+  max-width: 100%;
 }
 .TeamWorkBar{
-  max-width: 85%;
+  max-width: 100%;
 }
 .LearnBar{
   max-width: 100%;
@@ -312,7 +456,7 @@ p{
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 45%;
-
+  height: 25%;
 }
 .column img {
   float: left;
@@ -340,7 +484,7 @@ a{
   color: #F27D77;
 }
 
-img:hover {
+.imgMain:hover{
   float: center;
   position: relative;
   top: 5%;
